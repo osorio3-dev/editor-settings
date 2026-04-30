@@ -86,13 +86,19 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-p": null
-    }
+      "ctrl-p": null,
+    },
   },
   {
     "context": "(FileFinder || FileFinder > Picker > Editor)",
     "bindings": {
-      "ctrl-p": null
+      "ctrl-p": null,
+    },
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-k": "git_panel::ToggleFocus"
     }
   }
 ]
