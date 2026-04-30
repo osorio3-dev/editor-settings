@@ -7,22 +7,24 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "agent_servers": {
-    "opencode": {
-      "default_model": "google/gemini-3-flash-preview",
-      "type": "extension",
-      "default_mode": "gentleman",
-    },
+  "collaboration_panel": {
+    "dock": "left",
   },
+
   "inlay_hints": {
     "enabled": true,
   },
+
   "git_panel": {
+    "dock": "left",
     "tree_view": true,
     "sort_by_path": true,
   },
+
   "agent": {
-    "always_allow_tool_actions": true,
+    "tool_permissions": {
+      "default": "allow",
+    },
     "dock": "left",
     "default_profile": "write",
     "default_model": {
@@ -31,40 +33,102 @@
     },
     "model_parameters": [],
   },
-  "outline_panel": {
-    "dock": "right",
-  },
 
-  "title_bar": {
-    "show_branch_icon": false,
-  },
-  "status_bar": {
-    "active_language_button": true,
-  },
-  "project_panel": {
-    "dock": "right",
-    "button": false,
-  },
   "tab_bar": {
     "show": false,
   },
+
   "ui_font_family": "Dank Mono",
+
   "buffer_font_family": "Dank Mono",
+
   "terminal": {
     "shell": "system",
   },
+
+  "base_keymap": "JetBrains",
+
+  "ui_font_size": 20,
+
+  "buffer_font_size": 24.0,
+
+  "theme": {
+    "mode": "dark",
+    "light": "One Dark",
+    "dark": "Catppuccin Mocha",
+  },
+
   "icon_theme": {
     "mode": "dark",
     "light": "Zed (Default)",
     "dark": "Catppuccin Mocha",
   },
-  "base_keymap": "JetBrains",
-  "ui_font_size": 20,
-  "buffer_font_size": 24.0,
-  "theme": {
-    "mode": "dark",
-    "light": "One Dark",
-    "dark": "Catppuccin Mocha",
+
+  "title_bar": {
+    "show_onboarding_banner": false,
+    // "show_project_items": false,
+    // "show_branch_name": false,
+    "show_user_menu": false,
+  },
+
+  "toolbar": {
+    "quick_actions": false,
+  },
+
+  "status_bar": {
+    "experimental.show": false,
+  },
+
+  "centered_layout": {
+    "right_padding": 0.15,
+    "left_padding": 0.15,
+  },
+
+  "outline_panel": {
+    "default_width": 300,
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+
+  "file_finder": {
+    "modal_max_width": "large",
+  },
+
+  "scrollbar": {
+    "show": "never",
+  },
+
+  "gutter": {
+    "min_line_number_digits": 0,
+    "folds": false,
+    "runnables": false,
+  },
+
+  "indent_guides": {
+    "enabled": false,
+  },
+
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+
+  "project_panel": {
+    "dock": "right",
+    "default_width": 400,
+    "hide_root": true,
+    "auto_fold_dirs": false,
+    "starts_open": false,
+    // "git_status": false,
+    "sticky_scroll": false,
+    "scrollbar": {
+      "show": "never",
+    },
+    "indent_guides": {
+      "show": "never",
+    },
   },
 
   "file_types": {
@@ -112,7 +176,6 @@
       "language_servers": ["django-language-server"],
       "tab_size": 4,
     },
-
     "Vue.js": {
       "formatter": {
         "external": {
@@ -153,6 +216,14 @@
       },
     },
 
+    // "odoo": {
+    //   "settings": {
+    //     "Odoo": {
+    //       "selectedProfile": "my_profile",
+    //     },
+    //   },
+    // },
+
     "basedpyright": {
       "initialization_options": {
         "python": {
@@ -184,4 +255,29 @@
       },
     },
   },
+
+  //   "theme_overrides": {
+  //     "Aura Dark": {
+  //       "editor.document_highlight.read_background": "#00000000",
+  //       "editor.document_highlight.write_background": "#00000000",
+  //       "border.variant": "#15141C",
+  //       "border": "#15141C",
+  //       "title_bar.background": "#15141C",
+  //       "panel.background": "#15141C",
+  //       "panel.focused_border": "#4E466E",
+  //       "players": [
+  //         {
+  //           "cursor": "#BD9DFF",
+  //         },
+  //       ],
+  //       "syntax": {
+  //         "comment": {
+  //           "font_style": "italic",
+  //         },
+  //         "comment.doc": {
+  //           "font_style": "italic",
+  //         },
+  //       },
+  //     },
+  //   },
 }
