@@ -1,0 +1,13 @@
+# IntelliJ IDEA
+.idea
+*.iml
+*.iws
+.idea-colp
+.sc
+
+# MAC
+.DS_Store
+._.DS_Store
+
+# Custom
+.no-commit
