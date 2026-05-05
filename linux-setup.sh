@@ -115,3 +115,11 @@ sudo reboot
 # __NV_PRIME_RENDER_OFFLOAD=1
 # __GLX_VENDOR_LIBRARY_NAME=nvidia
 # MANGOHUD=1  \# FPS monitor
+
+# ==================
+# OPENCODE PARA JETBRAINS IDEA
+# ==================
+# Descarga desde GitHub releases (elige x86_64 sin AVX2)
+wget https://github.com/anomalyco/opencode/releases/download/v1.1.52/opencode-linux-x64.tar.gz
+tar -xzf opencode-linux-x64.tar.gz
+sudo mv opencode /usr/local/bin/
